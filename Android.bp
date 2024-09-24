@@ -1,4 +1,4 @@
-// Copyright (C) 2018 The Android Open Source Project
+// Copyright (C) 2024 The Android Open Source Project
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -17,10 +17,21 @@ package {
     default_applicable_licenses: ["Android-Apache-2.0"],
 }
 
-kernel_config {
-    name: "kernel_config_q_4.14",
+prebuilt_etc {
+    name: "approved-ogki-builds.xml",
+    src: "approved-ogki-builds.xml",
+    sub_dir: "kernel",
+}
+
+prebuilt_etc {
+    name: "kernel-lifetimes.xml",
+    src: "kernel-lifetimes.xml",
+    sub_dir: "kernel",
+}
+
+filegroup {
+    name: "kernel_lifetimes_ref",
     srcs: [
-        "android-base.config",
+        "kernel-lifetimes.xml",
     ],
-    meta: "android-base-conditional.xml",
 }
