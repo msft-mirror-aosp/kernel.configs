@@ -1,4 +1,4 @@
-<kernel minlts="5.15.0" />
+<kernel minlts="6.6.0" />
 
 <!-- KEEP ALPHABETICALLY SORTED -->
 <!-- ARM base requirements -->
@@ -47,10 +47,10 @@
 		<key>CONFIG_ARMV8_DEPRECATED</key>
 		<value type="bool">y</value>
 	</config>
-	<!--<config>
+	<config>
 		<key>CONFIG_CFI_CLANG</key>
 		<value type="bool">y</value>
-	</config>-->
+	</config>
 	<config>
 		<key>CONFIG_COMPAT</key>
 		<value type="bool">y</value>
@@ -147,10 +147,10 @@
 			<value type="bool">y</value>
 		</config>
 	</conditions>
-	<!--<config>
+	<config>
 		<key>CONFIG_CFI_CLANG</key>
 		<value type="bool">y</value>
-	</config>-->
+	</config>
 	<config>
 		<key>CONFIG_BPF_JIT_ALWAYS_ON</key>
 		<value type="bool">y</value>

@@ -30,7 +30,9 @@ def check_call(*args, **kwargs):
     subprocess.check_call(*args, **kwargs)
 
 def replace_configs_module_name(current_release, new_release, file_path):
-    check_call("sed -i'' -E 's/\"kernel_config_{}_([0-9.]*)\"/\"kernel_config_{}_\\1\"/g' {}"
+    # TODO(b/355580919): Remove the pattern '[0-9]+\\.next' by replacing the
+    # version placeholder with 'next'.
+    check_call("sed -i'' -E 's/\"kernel_config_{}_([0-9]+\\.[0-9]+|[0-9]+\\.next|next)\"/\"kernel_config_{}_\\1\"/g' {}"
                 .format(current_release, new_release, file_path), shell=True)
 
 class Bump(object):
@@ -54,6 +56,11 @@ class Bump(object):
                 year = datetime.datetime.now().year
                 check_call("sed -i'' -E 's/Copyright \\(C\\) [0-9]{{4,}}/Copyright (C) {}/g' {}".format(year, abs_path), shell=True)
                 replace_configs_module_name(self.current_release, self.new_release, abs_path)
+                if os.path.basename(abs_path) == "Android.bp":
+                    if shutil.which("bpfmt") is not None:
+                        check_call("bpfmt -w {}".format(abs_path), shell=True)
+                    else:
+                        print("bpfmt is not available so {} is not being formatted. Try `m bpfmt` first".format(abs_path))
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
