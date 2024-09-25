@@ -9,5 +9,7 @@
         <build id="33c3a0275689e4e1ec425168c518bb2a19067d15134b8a378d9f559e81a158a2" bug="365040462"/>
         <build id="0141db8fab24fa166137f8ab0a22ab2f50e3cf7b582e1619713641e27604b42d" bug="365050796"/>
         <build id="cef7d3cb5e807a1290e8ebfec13d82666e7e9fea3607b9b85a1c98ad660b5db2" bug="367569362"/>
+        <build id="a9098d4801bb0adfd5ece84dd1bd602477d20e10d4c6747dea7b55318447642a" bug="365445056"/>
+        <build id="8fb7ad74cb59ca7345d355b6764226c4048ed02a1ea9189bad8e9f842b101484" bug="365490960"/>
     </branch>
 </ogki-approved>
