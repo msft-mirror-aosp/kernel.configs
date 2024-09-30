@@ -11,5 +11,6 @@
         <build id="cef7d3cb5e807a1290e8ebfec13d82666e7e9fea3607b9b85a1c98ad660b5db2" bug="367569362"/>
         <build id="a9098d4801bb0adfd5ece84dd1bd602477d20e10d4c6747dea7b55318447642a" bug="365445056"/>
         <build id="8fb7ad74cb59ca7345d355b6764226c4048ed02a1ea9189bad8e9f842b101484" bug="365490960"/>
+        <build id="b1f92dda6b2c38dbea909badc91b3b28a054de94a024486964bd72f79c808c8b" bug="370105559"/>
     </branch>
 </ogki-approved>
