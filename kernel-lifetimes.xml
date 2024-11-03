@@ -50,6 +50,7 @@
 	<branch name="android14-5.15" min_android_release="14" version="5.15" launch="2021-10-31" eol="2028-07-01">
 		<lts-versions>
 			<release version="5.15.123" launch="2023-10-27" eol="2024-11-01"/>
+			<release version="5.15.131" launch="2023-11-24" eol="2024-11-01"/>
 			<release version="5.15.137" launch="2023-12-13" eol="2024-11-01"/>
 			<release version="5.15.144" launch="2024-02-20" eol="2024-11-01"/>
 			<release version="5.15.148" launch="2024-04-27" eol="2025-05-01"/>
