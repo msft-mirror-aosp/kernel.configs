@@ -32,5 +32,8 @@
         <build id="98d4d1391fb98fcdc68ef8d84d1d2ffe0958178f8f3d98cbf71003e12e322666" bug="396061988"/>
         <build id="6e4cefcf7c0461f90bc747db044c66a8c162afe166b571d6a3a8924417de66c5" bug="397325644"/>
         <build id="66ca657d7332d74e831dd6307bdc350cac670634c853382a48e320f317ef519f" bug="391459865"/>
+        <build id="aabbb8f067b8811d10b65ff71171fb76dbac82373baa13949ae74c0c04cdb240" bug="400616479"/>
+        <build id="f8d33b7bbb35d9dc4c8af162a6d4b7d2d79c057b3e09341bfb3db50712bcd61e" bug="400383590"/>
+        <build id="d63f0df6da836071cd214b1ae75b9cf9eb09f4f824f244fb02cdec0c3d1fda74" bug="402031639"/>
     </branch>
 </ogki-approved>
