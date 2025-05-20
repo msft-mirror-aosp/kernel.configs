@@ -50,5 +50,6 @@
         <build id="553c676af4e9ec9172a5887c2658cec24aed980e5a2f7c8d431413cdb1c6ff30" bug="413159095"/>
         <build id="c84bd7b5c1988d09971de39f74fd40fd098ffcba4cc0096be655c4670b3d7ba3" bug="415959920"/>
         <build id="335f238fce64b114d897e97a95c806955d1ff39de2ae0bdc28d304d737a95a21" bug="417153558"/>
+        <build id="262c0ac7e2910df34dcb49b7d3c8b883d5ddf170ee2595ae5a193e6f8bf4ebcd" bug="417623531"/>
     </branch>
 </ogki-approved>
