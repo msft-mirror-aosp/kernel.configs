@@ -70,4 +70,6 @@
         <build id="481b501f66082f0308a786415831fe990b9ace66e3c7dd574e2e22c0641e402d" bug="434844507"/>
         <build id="0879838c618a14f57ae199e68e815f8dd3b250ee52a660c39fe111df6aff66c8" bug="434879807"/>
     </branch>
+    <branch name="android16-6.12">
+    </branch>
 </ogki-approved>
